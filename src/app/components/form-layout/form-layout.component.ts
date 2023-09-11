@@ -111,9 +111,4 @@ export class FormLayoutComponent implements OnInit,OnDestroy {
     this.unsubscribe$.complete()
   }
 
- /* formatDate(event: Date):string {
-      return  this.datePipe.transform(event, 'dd-MM-yyyy') || ''
-    //  const formattedDate = this.datePipe.transform(event, 'dd-MM-yyyy')
-     // this.dateOfBirth.setValue(formattedDate)
-  }*/
 }
