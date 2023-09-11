@@ -16,16 +16,6 @@
         <mat-error *ngIf="lastName.touched && lastName.invalid">LastName is required</mat-error>
       </mat-form-field>
 
-      <!--   <mat-form-field class="field">
-           <mat-label>Choose a date</mat-label>
-           <input formControlName="dateOfBirth" (dateChange)="formatDate($event)" matInput [matDatepicker]="picker">
-          &lt;!&ndash; <input formControlName="dateOfBirth"  matInput [matDatepicker]="picker">&ndash;&gt;
-           <mat-hint>DD-MM-YYYY</mat-hint>
-           <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-           <mat-datepicker #picker></mat-datepicker>
-           <mat-error *ngIf="dateOfBirth.touched && lastName.invalid">Date is required</mat-error>
-         </mat-form-field>-->
-
       <mat-form-field class="field">
         <mat-label>Choose a date</mat-label>
         <input matInput [matDatepicker]="picker " placeholder="Choose a date" formControlName="dateOfBirth">
